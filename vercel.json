@@ -11,15 +11,9 @@
       "config": { "distDir": "dist" }
     }
   ],
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
   "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "backend/server.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "frontend/dist/$1"
-    }
-  ],
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+    { "src": "/api/(.*)", "dest": "backend/server.js" },
+    { "src": "/(.*)", "dest": "frontend/dist/$1" }
+  ]
 }
