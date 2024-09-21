@@ -57,7 +57,7 @@ AuthApp is a full-stack application with a React frontend and Node.js backend:
 
 ## Deployment
 
-- Frontend: Vercel
+- Frontend: Cloudflare pages
 - Backend: Vercel
 - Database: MongoDB Atlas
 
