@@ -39,7 +39,7 @@ function Login() {
     setLoading(true);
     try {
       // send login request to backend
-      const response = await axios.post('http://localhost:5000/api/auth/login', { email, password });
+      const response = await axios.post('https://auth-app-wine-one.vercel.app/api/auth/login', { email, password });
       localStorage.setItem('token', response.data.token);
       localStorage.setItem('name', response.data.name);
       dispatch(login({ name: response.data.name }));

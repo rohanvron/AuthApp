@@ -42,7 +42,7 @@ function Signup() {
     try {
 
       // send signup request to backend
-      await axios.post('http://localhost:5000/api/auth/signup', { name, email, password });
+      await axios.post('https://auth-app-wine-one.vercel.app/api/auth/signup', { name, email, password });
       toast.success("Signup successful! Please login.");
 
       // navigate to login page if signup is successful
